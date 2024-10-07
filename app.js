@@ -11,11 +11,15 @@ function isPrime(num){
     return true;
 }
 const primeNumber=[];
+let primeSum=0;
 for(let i=0;i<numbers.length;i++){
     if(isPrime(numbers[i])){
         primeNumber.push(numbers[i]);
+        primeSum=primeSum+numbers[i];
+
     }
 }
 console.log("prime numbers",primeNumber);
 console.log("maximum value",max);
 console.log("minimum value",min);
+console.log("sum of prime number",primeSum);
